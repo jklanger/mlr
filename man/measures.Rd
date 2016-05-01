@@ -10,6 +10,7 @@
 \alias{bac}
 \alias{ber}
 \alias{brier}
+\alias{brier.sc}
 \alias{cindex}
 \alias{db}
 \alias{dunn}
@@ -32,6 +33,7 @@
 \alias{measureAUC}
 \alias{measureBAC}
 \alias{measureBrier}
+\alias{measureBrier.sc}
 \alias{measureEXPVAR}
 \alias{measureFDR}
 \alias{measureFN}
@@ -145,6 +147,10 @@ measureAUC(probabilites, truth, negative, positive)
 brier
 
 measureBrier(probabilites, truth, negative, positive)
+
+brier.sc
+
+measureBrier.sc(probabilites, truth, negative, positive)
 
 bac
 
