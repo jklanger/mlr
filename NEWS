@@ -30,6 +30,8 @@ mlr_2.9:
 - rename generatePartialPrediction, plotPartialPrediction, and plotPartialPredictionGGVIS to
   generatePartialDependence, plotPartialDependence, and plotPartialDependenceGGVIS
 - add stability.nugget parameter for "regr.km"
+- The learners classif.ranger, regr.ranger and surv.ranger now respect unordered
+  factors by default.
 
 - new learners
 -- surv.cv.CoxBoost
