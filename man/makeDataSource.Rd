@@ -11,8 +11,12 @@ makeDataSource(src, rows = NULL, cols = NULL, ...)
 \alias{makeDataSource}
 \title{Create a Data Source backend for mlr Tasks.}
 \usage{
+<<<<<<< 370bff17fe3845565c0f8fd1e4aa3f846e8b5564
 makeDataSource(src, cols = NULL, ...)
 >>>>>>> tests, man pages, ...
+=======
+makeDataSource(src, rows = NULL, cols = NULL, ...)
+>>>>>>> removing direct data access
 }
 \arguments{
 \item{src}{[\code{\link[base]{data.frame}} | \code{\link[dplyr]{tbl}}]\cr
@@ -22,18 +26,25 @@ makeDataSource(src, cols = NULL, ...)
     \item[\code{\link[dplyr]{tbl}}]{Tables as used in \pkg{dplyr}. Can use a SQL backend.}
   }}
 
+<<<<<<< 370bff17fe3845565c0f8fd1e4aa3f846e8b5564
 <<<<<<< 6873e5499211c3bb3aca201d005b6732cb56fcbb
 \item{rows}{[\code{integer} | \code{NULL}]\cr
 Subset of rows to use in the task. Additional rows are ignored.}
 
 =======
 >>>>>>> tests, man pages, ...
+=======
+\item{rows}{[\code{integer} | \code{NULL}]\cr
+Subset of rows to use in the task. Additional rows are ignored.}
+
+>>>>>>> removing direct data access
 \item{cols}{[\code{character} | \code{NULL}]\cr
 Subset of columns to use in the task. Additional columns in \code{src} are ignored.}
 
 \item{...}{[\code{any}]\cr
 Additional arguments, depending on the type of \code{src}.}
 
+<<<<<<< 370bff17fe3845565c0f8fd1e4aa3f846e8b5564
 <<<<<<< 6873e5499211c3bb3aca201d005b6732cb56fcbb
 \item{key}{[\code{character}]\cr
 Required for database backends: Name of the primary key column.}
@@ -41,6 +52,10 @@ Required for database backends: Name of the primary key column.}
 \item{rows}{[\code{integer} | \code{NULL}]\cr
 Subset of rows to use in the task. Additional rows are ignored.}
 >>>>>>> tests, man pages, ...
+=======
+\item{key}{[\code{character}]\cr
+Required for database backends: Name of the primary key column.}
+>>>>>>> removing direct data access
 }
 \value{
 [\code{DataSource}].
