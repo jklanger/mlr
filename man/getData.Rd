@@ -4,6 +4,7 @@
 \alias{getData}
 \title{Retrive data from a DataSource.}
 \usage{
+<<<<<<< 6873e5499211c3bb3aca201d005b6732cb56fcbb
 getData(src, rows = NULL, cols = NULL)
 }
 \arguments{
@@ -11,6 +12,15 @@ getData(src, rows = NULL, cols = NULL)
 Subset of rows to retrieve.}
 
 \item{cols}{[\code{character}]\cr
+=======
+getData(src, subset, features)
+}
+\arguments{
+\item{subset}{[\code{integer}]\cr
+Subset of rows to retrieve.}
+
+\item{features}{[\code{character}]\cr
+>>>>>>> tests, man pages, ...
 Names of features to retrieve.}
 
 \item{data}{[\code{\link{DataSource}}]\cr
