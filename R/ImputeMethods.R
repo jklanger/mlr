@@ -296,7 +296,7 @@ imputeLearner = function(learner, features = NULL) {
       # remove all observations with missing values in column col (which is the target in the imputation task)
       ind = !is.na(data[[col]])
       task = constructor("impute", data = subset(data, subset = ind, select = features), target = col,
-        check.data = TRUE, fixup.data = "quiet")
+        check.data = TRUE)
       list(model = train(learner, task), features = features)
     },
 
