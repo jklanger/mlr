@@ -30,4 +30,3 @@ predictLearner.classif.knn = function(.learner, .model, .newdata, ...) {
   browser()
   do.call(class::knn, args)
 }
-

@@ -4,14 +4,24 @@
 \alias{getData}
 \title{Retrive data from a DataSource.}
 \usage{
+<<<<<<< HEAD
 <<<<<<< 6873e5499211c3bb3aca201d005b6732cb56fcbb
 getData(src, rows = NULL, cols = NULL)
 }
 \arguments{
+=======
+getData(data, rows = NULL, cols = NULL)
+}
+\arguments{
+\item{data}{[\code{\link{DataSource}}]\cr
+\code{\link{DataSource}}.}
+
+>>>>>>> 61b241de9b92c5f1f99e1aeb337792e8132e9f42
 \item{rows}{[\code{integer}]\cr
 Subset of rows to retrieve.}
 
 \item{cols}{[\code{character}]\cr
+<<<<<<< HEAD
 =======
 getData(src, subset, features)
 }
@@ -25,8 +35,18 @@ Names of features to retrieve.}
 
 \item{data}{[\code{\link{DataSource}}]\cr
 \code{\link{DataSource}}.}
+=======
+Names of features to retrieve.}
+>>>>>>> 61b241de9b92c5f1f99e1aeb337792e8132e9f42
 }
 \value{
 [\code{data.frame}].
 }
+<<<<<<< HEAD
+=======
+\description{
+\code{\link{getData}} takes a \code{\link{DataSource}} and retrieves the data
+in a data.frame.
+}
+>>>>>>> 61b241de9b92c5f1f99e1aeb337792e8132e9f42
 
