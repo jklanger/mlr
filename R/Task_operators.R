@@ -392,8 +392,7 @@ changeData = function(task, data, costs, weights) {
     costs = getTaskCosts(task)
   if (missing(weights))
     weights = task$weights
-  task$env = new.env(parent = emptyenv())
-  task$env$data = data
+  task$data = makeDataSource(data)
   # FIXME: I hate R, this is all bad
   if (!is.null(costs))
     task$env$costs = costs
